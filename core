@@ -68,6 +68,7 @@ install() {
     ;;
   *)
     log::error "[$(timestamp)] unsupport platform: $platform"
+    return 1
     ;;
   esac
 
