@@ -1,0 +1,9 @@
+#!/bin/bash
+
+export PACKAGE_CORE_NAME="fq"
+export PACKAGE_CORE_BIN_NAME="$PACKAGE_CORE_NAME"
+export PACKAGE_CORE_VERSION=v0.3.0
+export PACKAGE_CORE_ORG="wader"
+
+# export PACKAGE_CORE_RELEASE_DOWNLOAD=${PACKAGE_CORE_RELEASE_DOWNLOAD:-"https://github.com/${PACKAGE_CORE_ORG}/fq/releases/download"}
+export PACKAGE_CORE_RELEASE_DOWNLOAD="https://github.com/${PACKAGE_CORE_ORG}/fq/releases/download"
