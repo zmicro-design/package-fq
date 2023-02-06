@@ -72,7 +72,7 @@ install() {
   esac
 
   local tmp_file="${name}${ext}"
-  local source_bin_file="./${name}-${PACKAGE_CORE_VERSION#v}-${platform}-${arch}/$name"
+  local source_bin_file="./$name"
   # local target_bin_file="$usr_bin_dir/$name"
 
   # prepare context
@@ -85,7 +85,7 @@ install() {
   #   https://github.com/wader/fq/releases/download/v0.3.0/fq_0.3.0_linux_amd64.tar.gz
   #   https://github.com/wader/fq/releases/download/v0.3.0/fq_0.3.0_linux_arm64.tar.gz
   # generate url
-  local url="${PACKAGE_CORE_RELEASE_DOWNLOAD}/$PACKAGE_CORE_VERSION/${name}_${PACKAGE_CORE_VERSION#v}_${platform}_${arch}.tar.gz"
+  local url="${PACKAGE_CORE_RELEASE_DOWNLOAD}/$PACKAGE_CORE_VERSION/${name}_${PACKAGE_CORE_VERSION#v}_${platform}_${arch}${ext}"
   log::debug "[$(timestamp)][package][$name][$kernel][$arch] url: $url, file: ${tmp_file}, tmp_dir: $tmp_dir"
 
   # download
